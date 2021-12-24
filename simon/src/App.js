@@ -8,7 +8,7 @@ function App() {
 
 	const handleBlink = (event) => {
 		event.target.styple.opacity = 1;
-		settimeout(() => {
+		setTimeout(() => {
 			event.target.style.opacity = 0.5;
 		}, 333);
 	};
@@ -27,7 +27,7 @@ function App() {
 		);
 	});
 
-	return <div className="App">{boxesElArr}</div>;
+	return <div id="boxes-container">{boxesElArr}</div>;
 }
 
 export default App;
